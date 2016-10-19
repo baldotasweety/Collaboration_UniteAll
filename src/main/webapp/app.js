@@ -1,10 +1,10 @@
 var app = angular.module('myApp',['ngRoute']);
 
-app.controller('HomeController', function($scope){
+/*app.controller('HomeController', function($scope){
 	$scope.message = 'HomeController';
-});
+});*/
 
-app.config(function($routeProvider){
+myApp.config(function($routeProvider){
 	
 	$routeProvider
 	
@@ -14,8 +14,8 @@ app.config(function($routeProvider){
 	})
 	
 	.when('/Login',{
-		templateUrl : 'login.html',
-		controller : RegisterController
+		templateUrl : 'c_user/Login.html',
+		controller : loginController
 	})
 	
 		.when('/forum', {
